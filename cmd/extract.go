@@ -12,7 +12,7 @@ import (
 var extractCmd = &cobra.Command{
 	Use:   "extract ZIP_FILE [DESTINATION]",
 	Short: "Extract a ZIP archive.",
-	Long:  ``,
+	Long:  `If no 'DESTINATION' is provided, it will extract the archive at the current location.`,
 	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		//fmt.Println("extract called")
