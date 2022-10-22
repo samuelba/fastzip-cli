@@ -1,4 +1,4 @@
-module fastzip-cli
+module github.com/samuelba/fastzip-cli
 
 go 1.19
 

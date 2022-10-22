@@ -1,6 +1,6 @@
 package main
 
-import "fastzip-cli/cmd"
+import "github.com/samuelba/fastzip-cli/cmd"
 
 func main() {
 	cmd.Execute()
