@@ -34,14 +34,13 @@ var compressCmd = &cobra.Command{
 		}
 		defer w.Close()
 
-		// If source is a file, get the parent folder to use in the archiver.
+		// Get source path info.
 		sourceInfo, err := os.Stat(source)
-		if !sourceInfo.IsDir() {
-			source = filepath.Dir(source)
-		}
+		// Get the parent folder to use in the archiver.
+		chroot := filepath.Dir(source)
 
 		// Create new Archiver
-		a, err := fastzip.NewArchiver(w, source)
+		a, err := fastzip.NewArchiver(w, chroot)
 		if err != nil {
 			color.Red("Could not create archiver, error: %s", err)
 			os.Exit(1)
