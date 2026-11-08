@@ -5,4 +5,4 @@
 
 ### Bug Fixes
 
-* update dependencies ([07e861b](https://github.com/samuelba/fastzip-cli/commit/07e861b20df24e32fd426f0acb4aba92e1678afd))
+* update dependencies (@samuelba) ([07e861b](https://github.com/samuelba/fastzip-cli/commit/07e861b20df24e32fd426f0acb4aba92e1678afd))
